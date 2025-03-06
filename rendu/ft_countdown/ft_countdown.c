@@ -2,6 +2,19 @@
 
 int main(void)
 {
-	write(1, "9876543210", 10);
+	char i = '9';
+
+	while (i >= '0')
+	{
+		write(1, &i, 1);
+		i--;
+	}
+
+	char newline = '\n';
+	write(1, &newline, 1);
+
 	return (0);
 }
+
+
+
